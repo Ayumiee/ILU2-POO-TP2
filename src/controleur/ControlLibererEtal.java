@@ -23,7 +23,7 @@ public class ControlLibererEtal {
 		donneesEtal[1]=""+controlTrouverEtalVendeur.trouverEtalVendeur(nomVendeur).isEtalOccupe();
 		donneesEtal[2]=controlTrouverEtalVendeur.trouverEtalVendeur(nomVendeur).getProduit();
 		donneesEtal[3]=""+controlTrouverEtalVendeur.trouverEtalVendeur(nomVendeur).getQuantiteDebut();
-		donneesEtal[4]=""+controlTrouverEtalVendeur.trouverEtalVendeur(nomVendeur).getQuantite();
+		donneesEtal[4]=""+(controlTrouverEtalVendeur.trouverEtalVendeur(nomVendeur).getQuantiteDebut()-controlTrouverEtalVendeur.trouverEtalVendeur(nomVendeur).getQuantite());
 		return donneesEtal;
 	}
 

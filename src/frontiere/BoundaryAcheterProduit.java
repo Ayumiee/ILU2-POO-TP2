@@ -24,15 +24,15 @@ public class BoundaryAcheterProduit {
 				System.out.println((i+1)+" - "+ vendeurs[i]);
 			}
 			int numVendeur=scan.nextInt();
-			
-			System.out.println("Panoramix se déplace jusqu'à l'étal	 du vendeur "+vendeurs[numVendeur]);
+
+			System.out.println("Panoramix se deplace jusqu a l'etal du vendeur " +vendeurs[numVendeur-1]);
 			System.out.println("Combien de fleurs souhaitez-vous achetez?");
 			int nbAchat=scan.nextInt();
 			
-			controlAcheterProduit.acheterProduit(produit, nbAchat,vendeurs[numVendeur]);
-			System.out.println(nomAcheteur+" a acheter "+nbAchat+ " de "+produit+ " à "+vendeurs[numVendeur]);
+			controlAcheterProduit.acheterProduit(produit, nbAchat,vendeurs[numVendeur-1]);
+			System.out.println(nomAcheteur+" a acheter "+nbAchat+ " de "+produit+ " a "+vendeurs[numVendeur-1]);
 		} else {
-			System.out.println("Vous n'êtes pas un habitant du village");
+			System.out.println("Vous n'etes pas un habitant du village");
 		}
 		
 	}
